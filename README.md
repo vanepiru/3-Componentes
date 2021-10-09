@@ -1,6 +1,8 @@
 # componentes
 
-# ***Formas de diferentes de definir componentes***
+
+
+# ***Las diferentes formas de definir componentes***
 
 ***ECMAScript 5 – createClass***
 Este fue el primer método que existió para crear componentes en React. Ejemplo:
