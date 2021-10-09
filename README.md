@@ -8,14 +8,14 @@
 Este fue el primer método que existió para crear componentes en React. Ejemplo:
 
  
-´´´js
+```js
 var miComponent = React.createClass({ 
   propTypes: {...}, 
   getDefaultProps: {...}, 
   getInitialState: {...}, 
   render: function(){...} 
 })
-´´´
+```
 La clase se crea mediante la función React.createClass , 
 el cual recibe un objeto que debe de tener al menos la función render,
  adicional, se puede declarar los propTypes , defaultProps  y el estado inicial del componente.
@@ -27,7 +27,7 @@ Este es el método que vimos en clase pero sin constructor, propTypes y defaultP
 clases que extienden de React.Component. Ejemplo:
 
  
-´´´js
+```js
 import React from 'react' 
 class ECMAScript6Class extends React.Component{ 
   constructor(props){ 
@@ -46,7 +46,7 @@ class ECMAScript6Class extends React.Component{
 
 ECMAScript6Class.propTypes = { ... } 
 ECMAScript6Class.defaultProps = { ... }
-´´´
+```
 
 Los propsTypes  y defaultsProps  son declarados fuera de la clase. 
 Este es el componente más recomendable cuando trabajamos con componentes con estado (Stateful).
@@ -59,7 +59,7 @@ La siguiente forma que soporta ECMAScript 6, es la creación de componentes medi
 y es recomendado únicamente para componentes sin estado . Veamos cómo quedaría:
 
  
-´´´js
+```js
 cont MiComponent = ({prop1, prop2, prop2}) => ( 
   return( 
     ... 
@@ -71,7 +71,7 @@ MiComponent.propTypes = {
 MiComponent.defaultProps = { 
   ...
 }
-´´´
+```
 Observemos que el componente se reduce a una arrow function, la cual recibe como parámetros las props . El cuerpo de la función es
 como el método render, podremos crear variables, poner un poco de lógica y retornar un JSX.
 Adicional, se puede definir los propTypes  y defaultProps  por fuera de la función.
@@ -83,7 +83,7 @@ La última forma disponible, es utilizar las nuevas sintaxis de ECMAScript 7.
 Este método es muy parecido a la creación de componentes mediante React.Componentes  ES6. Veamos cómo quedaría:
 
  
-´´´js
+```js
 class MiComponent extends React.Component { 
   static propTypes = {
     ...
@@ -105,7 +105,7 @@ class MiComponent extends React.Component {
     ... 
   } 
 }
-´´´
+```
 Este método es prácticamente igual que crear una clase en ES6, 
 con la diferencia que es posible declarar el estado como una propiedad, adicional,
 podemos declarar los defaultProps  y propTypes  dentro de la clase y marcarlos como static 
@@ -114,7 +114,7 @@ para poder ser accedidos desde fuera sin necesidad de crear una instancia.
 
 # ***export default***
 
-´´´js
+```js
 import React from 'react';
 
 class HolaMundo extends React.Component {
@@ -124,7 +124,7 @@ class HolaMundo extends React.Component {
 }
 
 export default HolaMundo;
-´´´
+```
 
 -default export es una convención que se utiliza cuando se desea exportar solo un objeto (variable, función, clase) desde el archivo (módulo).
 -Es la característica de ES6 que se usa para exportar un módulo (archivo) y usarlo en algún otro módulo (archivo).
