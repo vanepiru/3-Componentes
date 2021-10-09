@@ -1,6 +1,7 @@
-# componentes
+# Componentes
 
 
+![React-components-blog-image](https://user-images.githubusercontent.com/6796155/136663822-d3e2f72d-b264-406f-b90f-ea07374d863e.jpg)
 
 # ***Las diferentes formas de definir componentes***
 
