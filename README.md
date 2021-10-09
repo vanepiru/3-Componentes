@@ -127,6 +127,8 @@ class HolaMundo extends React.Component {
 export default HolaMundo;
 ```
 
---default export es una convención que se utiliza cuando se desea exportar solo un objeto (variable, función, clase) desde el archivo (módulo).
---Es la característica de ES6 que se usa para exportar un módulo (archivo) y usarlo en algún otro módulo (archivo).
---No se puede renombrar al importar en otro archivo, debe tener el mismo nombre que se utilizó para exportarlo.
+-default export es una convención que se utiliza cuando se desea exportar solo un objeto (variable, función, clase) desde el archivo (módulo).
+
+-Es la característica de ES6 que se usa para exportar un módulo (archivo) y usarlo en algún otro módulo (archivo).
+
+-No se puede renombrar al importar en otro archivo, debe tener el mismo nombre que se utilizó para exportarlo.
